@@ -4,8 +4,9 @@ var path = require('path');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const authenticate = require('./authenticate');
 const config = require('./config');
+// const session = require('express-session');
+// const FileStore = require('session-file-store')(session);
 
 const url = config.mongoUrl;
 const connect = mongoose.connect(url, {
